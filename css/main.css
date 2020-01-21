@@ -1,5 +1,5 @@
 :root {
-	--mainBlack: #111;
+	--mainBlack: rgb(43, 41, 41);
 	--mainWhite: rgb(231, 243, 231);
 	--textBlue: rgb(52, 147, 202);
 	--grey: rgb(181, 187, 190);

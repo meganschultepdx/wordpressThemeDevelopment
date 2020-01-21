@@ -1,5 +1,11 @@
 <?php wp_footer(); ?>
-this is the footer
+<footer>
+
+  <div class="container">
+    megan schulte 2020
+
+  </div>
+</footer>
 
 
 </body>
