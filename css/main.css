@@ -1,0 +1,82 @@
+:root {
+	--mainBlack: #111;
+	--mainWhite: rgb(231, 243, 231);
+	--textBlue: rgb(52, 147, 202);
+	--grey: rgb(181, 187, 190);
+}
+
+header {
+	background: var(--mainBlack);
+	width: 100%;
+	height: 6rem;
+}
+
+.pageWrap {
+	padding: 2rem 0;
+}
+
+header .top-bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+header .top-bar li a {
+	padding: 1rem 1rem;
+	color: var(--mainWhite);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+header .top-bar li {
+	position: relative;
+}
+
+header .top-bar li:first-child a {
+	padding-left: 0;
+}
+
+header .top-bar li:last-child a {
+	padding-right: 0;
+}
+
+header .top-bar li .sub-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: var(--grey);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+	margin: 0 0 0 1rem;
+	padding: 0;
+	list-style: none;
+	border-radius: 0.5rem;
+	z-index: 999;
+	width: 10rem;
+}
+
+header .top-bar li .sub-menu a {
+	color: var(--textBlue);
+	/* text-transform: capitalize; */
+	text-align: center;
+	padding: 0.25rem 1rem;
+	display: inline-block;
+	text-decoration: none;
+}
+
+header .top-bar li .sub-menu a:hover {
+	color: var(--mainBlack);
+	text-decoration: none;
+}
+
+header .top-bar .menu-item-has-children:hover .sub-menu {
+	display: inline;
+}
