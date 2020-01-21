@@ -2,14 +2,9 @@
 
 <div class="container">
 
-  <div class="row">
+  <h1><?php the_title();?></h1>
 
-    <div class="col">
-      Left Side
-    </div>
-    <div class="col">
-    Right Side
-    </div>
-  </div>
+  <?php get_template_part('includes/section', 'content');?>
+
 </div>
 <?php get_footer(); ?>
