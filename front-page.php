@@ -13,9 +13,12 @@
     <?php endif;?>
   </div>
 
-  <h1><?php the_title();?></h1>
+  <div class="d-flex justify-content-center">
 
-  <?php get_template_part('includes/section', 'content');?>
+    <h1><?php the_title();?></h1>
+
+  </div>
+    <?php get_template_part('includes/section', 'content');?>
 
 </div>
 </section>
