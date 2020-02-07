@@ -26,7 +26,6 @@ add_theme_support('menus');
 add_theme_support('post-thumbnails');
 add_theme_support('widgets');
 
-
 //Menus
 
 register_nav_menus(
@@ -52,7 +51,7 @@ function my_sidebars()
         array(
             'name' => 'Page Sidebar',
             'id' => 'page-sidebar',
-            'before-title' => '<h4 class="widget-title">',
+            'before_title' => '<h4 class="widget-title">',
             'after_title' => '</h4>'
         )
     );
@@ -61,7 +60,7 @@ function my_sidebars()
         array(
             'name' => 'Blog Sidebar',
             'id' => 'blog-sidebar',
-            'before-title' => '<h4 class="widget-title">',
+            'before_title' => '<h4 class="widget-title">',
             'after_title' => '</h4>'
         )
     );
