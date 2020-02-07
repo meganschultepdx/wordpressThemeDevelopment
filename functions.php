@@ -67,3 +67,51 @@ function my_sidebars()
 }
 // hook that runs when WP loads and checks which widgets and sidebars are available
 add_action('widgets_init', 'my_sidebars');
+
+function my_first_post_type()
+{
+    $args = array(
+        'labels' => array(
+            'name' => 'Plants',
+            'singular_name' => 'Plant'
+        ),
+        'hierarchical' => false,
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-format-image',
+        'supports' => array('title', 'editor', 'thumbnail'),
+        // 'rewrite' => array('slug' => 'my-plants'),
+    );
+    register_post_type('plants', $args);
+}
+add_action('init', 'my_first_post_type');
+
+function my_first_taxonomy()
+{
+    $args = array(
+        'labels' => array(
+            'name' => 'Plants in My Yard',
+            'singular_name' => 'Plant in My Yard'
+        ),
+        'public' => true,
+        'hierarchical' => false,
+    );
+
+    register_taxonomy('Plants in My Yard', array('plants'), $args);
+}
+add_action('init', 'my_first_taxonomy');
+
+function my_second_taxonomy()
+{
+    $args = array(
+        'labels' => array(
+            'name' => 'Plants I Want',
+            'singular_name' => 'Plant I Want'
+        ),
+        'public' => true,
+        'hierarchical' => false,
+    );
+
+    register_taxonomy('Plants I Want', array('plants'), $args);
+}
+add_action('init', 'my_second_taxonomy');
