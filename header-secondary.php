@@ -2,13 +2,11 @@
 <html>
 
 <head>
-  <meta charset='UTF-8'>
-  <title>Document</title>
+	<meta charset='UTF-8'>
+	<title>Document</title>
 
+	<?php wp_head(); ?>
 
-  <?php wp_head(); ?>
-
-  
 </head>
 
 <body <?php body_class(); ?>>

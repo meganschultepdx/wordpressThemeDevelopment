@@ -34,7 +34,6 @@ register_nav_menus(
     'top-menu' => 'Top Menu Location',
     'mobile-menu' => 'Mobile Menu Location',
     'footer-menu' => 'Footer Menu Location',
-
   )
 );
 
@@ -50,22 +49,22 @@ add_image_size('blog-small', 300, 200, true);
 function my_sidebars()
 {
     register_sidebar(
-          array(
-                  'name' => 'Page Sidebar',
-                  'id' => 'page-sidebar',
-                  'before-title' => '<h4 class="widget-title">',
-                  'after_title' => '</h4>'
-            )
-      );
+        array(
+            'name' => 'Page Sidebar',
+            'id' => 'page-sidebar',
+            'before-title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
+        )
+    );
 
     register_sidebar(
-                array(
-                    'name' => 'Blog Sidebar',
-                    'id' => 'blog-sidebar',
-                    'before-title' => '<h4 class="widget-title">',
-                    'after_title' => '</h4>'
-              )
-            );
+        array(
+            'name' => 'Blog Sidebar',
+            'id' => 'blog-sidebar',
+            'before-title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
+        )
+    );
 }
 // hook that runs when WP loads and checks which widgets and sidebars are available
 add_action('widgets_init', 'my_sidebars');

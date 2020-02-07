@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name:  Contact US
+Template Name:  Contact me
 */
 
 ?>
@@ -9,28 +9,22 @@ Template Name:  Contact US
 <?php get_header();?>
 
 <section class="page-wrap">
-<div class="container">
+	<div class="container">
 
-  <h1><?php the_title();?></h1>
+  		<h1><?php the_title();?></h1>
   
-  <div class="row">
-  
-  <div class="col lg-6">
+  		<div class="row">
+  			<div class="col lg-6">
 
-      This is where the contact form goes
-  
-  </div>
-  
-  <div class="col lg-6">
+      		This is where the contact form goes
+			
+			</div>
+  			<div class="col lg-6">
 
-  <?php get_template_part('includes/section', 'content');?>
+  				<?php get_template_part('includes/section', 'content');?>
 
-  
-  </div>
-  
-  </div>
-
-
-</div>
+  			</div>
+		</div>
+	</div>
 </section>
 <?php get_footer(); ?>
