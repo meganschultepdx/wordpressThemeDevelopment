@@ -79,7 +79,7 @@ function my_first_post_type()
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-format-image',
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
         // 'rewrite' => array('slug' => 'my-plants'),
     );
     register_post_type('plants', $args);
