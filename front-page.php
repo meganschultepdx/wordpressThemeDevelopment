@@ -1,3 +1,4 @@
+<!-- Wordpress function that knows to grab the header -->
 <?php get_header();?>
 
 
